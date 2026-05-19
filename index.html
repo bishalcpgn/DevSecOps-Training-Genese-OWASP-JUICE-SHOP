@@ -640,7 +640,6 @@ code { font-family: var(--mono); font-size: 12px; background: var(--card-bg); co
 <li><div class="step-content">Request a different basket ID directly using your JWT (DevTools &rarr; Application &rarr; Local Storage &rarr; token):<div class="code-wrap"><div class="code-block"><code>curl -s http://localhost:3000/rest/basket/1 \
   -H &quot;Authorization: Bearer YOUR_TOKEN&quot; | python3 -m json.tool</code><button class="copy-btn" onclick="copyCode(this,'curl -s http://localhost:3000/rest/basket/1 \\\n  -H "Authorization: Bearer YOUR_TOKEN" | python3 -m json.tool')">Copy</button></div></div></div></li>
 <li><div class="step-content">Try IDs 1, 2, 3&hellip; each returns a different customer's basket.</div></li>
-<li><div class="step-content"><strong>Bonus:</strong> add an item to another user's basket via <code>PUT /api/BasketItems</code> with a different <code>BasketId</code>.</div></li>
 </ul>
         <div class="expected-wrap">
           <div class="expected-label">Expected result</div>
